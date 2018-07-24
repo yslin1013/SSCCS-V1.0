@@ -1,0 +1,47 @@
+[{
+    "constant": true,
+    "inputs": [{
+        "name": "",
+        "type": "address"
+    }],
+    "name": "balanceOf",
+    "outputs": [{
+        "name": "",
+        "type": "uint256",
+        "value": "0"
+    }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "constant": false,
+    "inputs": [{
+        "name": "_to",
+        "type": "address"
+    }, {
+        "name": "_value",
+        "type": "uint256"
+    }],
+    "name": "transfer",
+    "outputs": [{
+        "name": "success",
+        "type": "bool"
+    }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "inputs": [{
+        "name": "initialSupply",
+        "type": "uint256",
+        "index": 0,
+        "typeShort": "uint",
+        "bits": "256",
+        "displayName": "initial Supply",
+        "template": "elements_input_uint",
+        "value": "10000000"
+    }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+}]

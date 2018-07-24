@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SSCCS V1.0 Demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/icon.png">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1>SSCCS V1.0 Demo</h1>
+				<p>A simple system for controlling smart contracts on Ethereum<br />
+				   Demonstrate <i>transfer( )</i> defined in a 
+				   <a href='/contract/source?c_name=myToken' target='_blank'>minimum viable token contract</a>
+				</p>
+			</header>
+
+		<!-- Form -->
+			<form id="signup-form" method="POST" action="/contract/status">
+				<input type="text" name="src_addr" id="src_addr" placeholder="Source Address" />
+				<input type="password" name="passphrase" id="passphrase" placeholder="Passphrase" />
+				<input type="submit" value="Contract Status" />
+			</form>
+
+			<form id="signup-form" method="POST" action="/contract/token/transfer">
+				<input type="text" name="src_addr" id="src_addr" placeholder="Source Address" />
+				<input type="password" name="passphrase" id="passphrase" placeholder="Passphrase" />
+				<input type="text" name="dst_addr" id="dst_addr" placeholder="Destination Address" />
+				<input type="text" name="amount" id="amount" placeholder="Amount" />
+				<input type="submit" value="Transfer Tokens" />
+			</form>
+
+			<p></p><p></p><p></p><p></p>
+			
+		<!-- Footer -->
+			<footer id="footer">
+				Account 0: 0xf31665da87979cfb6e3f0f876db4549ea7138905<br>
+				Account 1: 0x42dbef63496b3194a405e35d0451881cee211607<br><br>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/yishanl/" class="icon fa-linkedin">
+						<span class="label">LinkedIn</span></a>
+					</li>
+					<li><a href="https://github.com/yslin1013" class="icon fa-github">
+						<span class="label">GitHub</span></a>
+					</li>
+					<li><a href="https://medium.com/@alisonyslin/1bf837041e39" class="icon fa-medium">
+						<span class="label">Medium</span></a>
+					</li>
+					<li><a href="mailto:yishanl@cs.nctu.edu.tw" class="icon fa-envelope-o">
+						<span class="label">Email</span></a>
+					</li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; yslin - Simple Smart Contract Control System: 
+					           a system perspective on operating Ethereum smart contracts</li>
+					<li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
